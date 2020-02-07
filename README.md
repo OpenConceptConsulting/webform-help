@@ -6,29 +6,45 @@ Basic help about webforms
 
 [WebForms](https://www.google.com)
 
-Prerequistes: ...
+Prerequistes: 
+* Install Drupall (optional)
 
-## Drupal Modules
-Modules
+        About Drupal: . . . 
+* Install "*WebForms*" module (optional)
+
+        About Modules: . . .
+* Login and navigate to:
+
+        Administration >> Structure >> Webforms
 
 ## Creating a Form
 Create
 
 ### Adding Elements
-#### Element Types
 
+#### Element Types
+##### Text
+* Headers
+
+* Textbox and Textfield
+
+NOTE: Input masks - stuff.
+
+Textbox
+
+##### Checkboxes, Radios, and Pull-down
+##### 
 
 #### Creating and Duplicating Elements
 
 #### Duplicating Elements
 
-```YAML
+```yaml
 main_1_client_feedback:
   '#type': container
   '#attributes':
-    style: 'box-sizing:border-box; display:flex; 
-            color:rgb(51, 51, 51); font-family:Lato, sans-serif; 
-            font-size:20px; max-width:900px;'
+    style: 'box-sizing:border-box; display:flex; color:rgb(51, 51, 51); 
+            font-family:Lato, sans-serif; font-size:20px; max-width:900px;'
   flex_1:
     '#type': container
     '#attributes':
