@@ -38,6 +38,6 @@ Styles
 
 ## Tips and Tricks
 
-[my_alt_text](/images/1.png  "1")
+[my_alt_text](https://github.com/OpenConceptConsulting/webform-help/tree/master/images/1.png  "1")
 
 
