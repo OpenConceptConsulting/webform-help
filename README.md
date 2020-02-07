@@ -20,6 +20,7 @@ Prerequistes:
 ## Creating a Form
 Create
 * Framework (locked)
+![my_alt_text](./images/2.png  "2")
 ```yaml
 main_1_client_feedback:
   '#type': container
