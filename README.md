@@ -19,8 +19,12 @@ Prerequistes:
 
 ## Creating a Form
 Create
-* Framework (locked)
+* "FLEX" Framework (locked)
+
 ![my_alt_text](./images/2.png  "2")
+
+![my_alt_text](./images/3.png  "3")
+
 ```yaml
 main_1_client_feedback:
   '#type': container
@@ -100,7 +104,7 @@ Settings
 ### Element Styles
 Styles . . . 
 
-## Testing a Form
+## Testing a Form: Is It Ready?
 Before publishing . . . 
 
 ## Publishing a Form
