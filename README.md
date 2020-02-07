@@ -19,26 +19,7 @@ Prerequistes:
 
 ## Creating a Form
 Create
-
-### Adding Elements
-
-#### Element Types
-##### Text
-* Headers
-
-* Textbox and Textfield
-
-NOTE: Input masks - stuff.
-
-Textbox
-
-##### Checkboxes, Radios, and Pull-down
-##### 
-
-#### Creating and Duplicating Elements
-
-#### Duplicating Elements
-
+* Framework (locked)
 ```yaml
 main_1_client_feedback:
   '#type': container
@@ -54,6 +35,51 @@ main_1_client_feedback:
       '#attributes':
         style: 'box-sizing:border-box; float:left;'
 ```
+* Before starting  . . . . duplicate
+* Create
+* How to "Copy/Paste"
+```yaml
+main_1_client_feedback:
+  '#type': container
+  '#attributes':
+    style: 'box-sizing:border-box; display:flex; color:rgb(51, 51, 51); 
+            font-family:Lato, sans-serif; font-size:20px; max-width:900px;'
+  flex_1:
+    '#type': container
+    '#attributes':
+      style: 'box-sizing:border-box; float:left; padding:15px;'
+    content_1:
+      '#type': container
+      '#attributes':
+        style: 'box-sizing:border-box; float:left;'
+```
+
+
+### Adding Elements
+* Before starting  . . . . duplicate
+
+#### Element Types
+* Questions to ask and choices to make . . .
+
+##### Text Elements
+* Headers
+
+* Textbox and Textfield
+
+        NOTE: Input masks - stuff . . .
+
+##### Combo Elements: Checkboxes, Radios, and Pull-down
+* 1
+* 2
+* 3 
+
+##### 
+
+#### Creating and Duplicating Elements
+
+#### Duplicating Elements
+
+
 
 #### Populating Elements
 Words Words Words Words Words Words 
@@ -71,13 +97,16 @@ Words Words Words Words Words Words
 Settings
 
 ### Element Styles
-Styles
+Styles . . . 
 
 ## Testing a Form
+Before publishing . . . 
 
 ## Publishing a Form
+After testing . . . 
 
 ## Form Submissions
+Once published . . .
 
 ## Tips and Tricks
 
