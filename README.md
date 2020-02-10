@@ -44,16 +44,16 @@ main_1_client_feedback:
 * Create
 * How to "Copy/Paste"
 ```yaml
-main_1_client_feedback:
+locked_main_1_client_feedback:
   '#type': container
   '#attributes':
     style: 'box-sizing:border-box; display:flex; color:rgb(51, 51, 51); 
             font-family:Lato, sans-serif; font-size:20px; max-width:900px;'
-  flex_1:
+  locked_flex_1:
     '#type': container
     '#attributes':
       style: 'box-sizing:border-box; float:left; padding:15px;'
-    content_1:
+    locaked_content_1:
       '#type': container
       '#attributes':
         style: 'box-sizing:border-box; float:left;'
