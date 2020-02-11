@@ -1,4 +1,15 @@
+# Drupal and WebForms Help
+Basic help about webforms
+
 Session breakdowns:
+
+Prerequisites: 
+
+[Intro to Drupal](https://www.youtube.com/playlist?list=PLLnpHn493BHE9mfp6z5--UowO-6SOzcuI)
+
+[What is a web form?](https://www.youtube.com/watch?v=KbbE3uC2OQE)
+
+[Intro to Drupal Webforms](https://www.youtube.com/playlist?list=PLL73GOh1BF-mLaw_K0jruwHnAJTGuotDO)
  
  Day 1
 
@@ -8,28 +19,25 @@ Session breakdowns:
 
 Bug reporting to wiki
 
-# Drupal and WebForms Help
-Basic help about webforms
 
 ## Drupal and WebForms
 [Drupal](https://www.google.com)
 
 [WebForms](https://www.google.com)
 
-Prerequistes: 
 * Install Drupall (optional)
 
-        About Drupal: Drupal is a free and open-source content management framework written in PHP and distributed under the GNU General Public License. Drupal provides a back-end framework for at least 2.3% of all websites worldwide – ranging from personal blogs to corporate, political, and government sites. 
+      About Drupal: Drupal is a free and open-source content management framework written in PHP and distributed under the GNU General Public License. Drupal provides a back-end framework for at least 2.3% of all websites worldwide – ranging from personal blogs to corporate, political, and government sites. 
 
 * Install "*WebForms*" module (optional)
 
-        About Modules: Extend and customize Drupal functionality with contributed modules.
+      About Modules: Extend and customize Drupal functionality with contributed modules.
 
 * Login and navigate to:
 
-        Administration >> Structure >> Webform
+      Administration >> Structure >> Webform
 
-        About Webform: Webform is the module for making forms and surveys in Drupal. After a submission customizable e-mails can be sent to administrators and/or submitters. Results can be exported into Excel or other spreadsheet applications. Webform also provides some basic statistical review and has an extensive API for expanding its features.
+      About Webform: Webform is the module for making forms and surveys in Drupal. After a submission customizable e-mails can be sent to administrators and/or submitters. Results can be exported into Excel or other spreadsheet applications. Webform also provides some basic statistical review and has an extensive API for expanding its features.
 
 ## Getting Started
 
@@ -40,7 +48,7 @@ To create a form, click on the "+ Add Webform" botton. This will create a new fo
 
 * "FLEX" Framework (locked) - the following illustrates the "flex" framework. This framework shoudl remain untouched, or "locked". All content shoudl be contained or nested within these blocks. This can ensure consistent and practical behavior across differing browsers and devices.
 
-![my_alt_text](./images/4.png  "2")
+![my_alt_text](./images/4.png  "Image title here!")
 
 NOTE: A user could alternatively copy/paste the flex framewrok by selecting the "Source" tab at top of the form and simply copy and paste the code for first three blocks in a new form:
 
@@ -68,22 +76,78 @@ A user can create or duplicate elements. To add new element, click on the "Add E
 * Questions to ask and choices to make . . .
 
 #### Populating Text Elements
-* Headers
 
-* Textboxes and Textfields
+* Text
 
-        NOTE: Input masks - stuff . . .
+  Text or processed text are used to add any **read-only** paragraph, free-form, or HTML text data to the form. To add a textbox, simply create or duplicate a textbox element. Provide a vaild and unique key and enter either rich text or HTML data into the approriate text field.
+
+  <img src="./images/textbox.png" alt="Textobox and processed text setting" width=25%>
+
+  Note: Please see **Element Styles** to learn more about styling text.
+
+  It is also possible to use the form "Source" tab to copy and paste the textbox code. Take note of **"Advanced HTML/Text"** in the form editor element list or **processed_text** in the example below.
+
+  ```yaml
+  subtitle:
+      '#type': processed_text
+      '#text': |
+        Thank you for taking a moment to provide important information that will tell us how we are doing and how we can improve our services. According to our records, you received support from the TCS office located in [Dubai] on or shortly before [2018-06-04]. Your feedback regarding the quality and value of this interaction is greatly appreciated. Responses will be recorded in aggregate form only and never on an individual basis.
+  ```
+
+* Text and textarea fields 
+
+  Text fields are used to gather **single-line** data from the form. To add a text field, simply create or duplicate a text field element. Provide a **Title or Question** and a **Description** (rich text or HTML) into the approriate text field. It is also possible to optioally set the following: **Placeholder text** and whether the field is **required** (see example).
+
+    <img src="./images/text_field.png" alt="Textobox and processed text setting">
+    
+    Text field option sample [Text Field Options](./images/text_field_options.png)
+
+    Textareas are much like text fields, only they allow multiline input. 
+
+    As mentioned ealier, it is also possible to use the form "Source" tab to copy and paste the text field and textarea code. Take note of type **textfield** or **textarea**, and that the field key (e.g. the first line reading **"sample_text_field:"**) needs to have a unique name, like **"sample_text_field_01:"**.
+
+  ```yaml
+  sample_text_field:
+      '#type': textfield
+      '#title': 'Sample Text Field Title or Question'
+      '#description': 'Sample Text Field: please provide valid answer.'
+      '#placeholder': 'Please provide your answer here! Thank you.'
+      '#required': true
+      '#required_error': 'Valid data is required for the question. Please provide valid data.'
+  ```
+
+    NOTE: Please see **Input Masks, Conditional, and Computed Elements** to learn more about input masks (e.g. date, email, phone number, etc.)
+
+* Headings
+
+Headings are a very important part of any webpage or form. Thet enable a user to easily understand and navigate the page structure and **must be included** whenver creating new content.
+
+```html
+<h1></h1> -- minimun heading requirement
+<h2></h2>
+<h3></h3>
+...
+<h6></h6> -- maximun heading requirement
+```
+
+Note: The minimun requirement of **```<h1>```** is created by using the **form title**. 
+
+To create a heading (use for page navigation adn strucuture), simply create or duplicate 
+
+
 
 #### Populating Combo Elements: Checkboxes, Radios, and Pull-down
-* Checkbox selections: 
+The following elements offers the opportunity to select predescribed values from a list of options.
 
-* Radio selections:
+* Checkbox selections: allows for the selection of one or more values.
 
-* Pull-down selections:
+* Radio selections: allows for the selection of a single value.
+
+* Pull-down selections: allows for the selection of a single value.
 
 ##### Understanding "Options", "values", "labels", and ...
-* Options: 
-* Values: 
+* Option value: an option value for a  selection refers to what value is sent back to the server. This can differ from the text where text might be more descriptive. 
+* Option text: the option text for a single selection refers to what a user can see or choose from. This can be simple like "Yes/No" or more descritive "I have requested but not yet received my new security credatials."
 * Labels & Description: 
 
 #### Preconfigured options and lists
@@ -91,11 +155,13 @@ The Options configuration page lists reusable predefined options/values availabl
 
 ##### Example 1: Address setup
 
-##### Example 2: Custom
+##### Example 2: Scale
 
-##### Example 3: Scale
+##### Example 3:  Custom
 
-#### Other Elements
+#### Other Elements and Settings
+
+#### Input Masks, Conditional, and Computed Elements
 List of other useful elements:
 
 
@@ -131,7 +197,6 @@ Basic elements
 *  Text field?
 
 Advanced elements
-*  Type	
 *  Autocomplete?
 *  CAPTCHA?
 *  CodeMirror?
@@ -153,7 +218,7 @@ Advanced elements
 *  Value?
 
 Composite elements
-*  Type	
+
 *  Address?
 *  Contact?
 *  Custom composite?
@@ -163,7 +228,6 @@ Composite elements
 *  Telephone advanced?
 
 Markup elements
-*  Type	
 *  Advanced HTML/Text?
 *  Basic HTML?
 *  Horizontal rule?
@@ -171,7 +235,7 @@ Markup elements
 *  Message?
 
 File upload elements
-*  Type	
+
 *  Audio file?
 *  Document file?
 *  File?
@@ -179,7 +243,7 @@ File upload elements
 *  Video file?
 
 Options elements
-*  Type	
+
 *  Buttons?
 *  Buttons other?
 *  Checkboxes?
@@ -194,11 +258,10 @@ Options elements
 *  Table sort?
 
 Computed Elements
-*  Type	
 *  Computed token?
 *  Computed Twig?
-* Containers
-* Type	
+
+Containers
 *  Container?
 *  Details?
 *  Fieldset?
@@ -207,14 +270,12 @@ Computed Elements
 *  Section?
 
 Date/time elements
-*  Type	
 *  Date?
 *  Date/time?
 *  Date list?
 *  Time?
 
 Entity reference elements
-*  Type	
 *  Entity autocomplete?
 *  Entity checkboxes?
 *  Entity radios?
@@ -223,12 +284,10 @@ Entity reference elements
 *  Term select?
 
 Markup
-*  Type	
 *  More?
-*  Buttons
-*  Type	
+
+Buttons
 *  Submit button(s)?
 
 Other elements
-*  Type	
-*  Generic element?
+*  Generic element? 
