@@ -25,17 +25,17 @@ Bug reporting to wiki
 
 [WebForms](https://www.google.com)
 
-* Install Drupall (optional)
+* Install **Drupal** (optional)
 
       About Drupal: Drupal is a free and open-source content management framework written in PHP and distributed under the GNU General Public License. Drupal provides a back-end framework for at least 2.3% of all websites worldwide – ranging from personal blogs to corporate, political, and government sites. 
 
-* Install "*WebForms*" module (optional)
+* Install **WebForms** module (optional)
 
       About Modules: Extend and customize Drupal functionality with contributed modules.
 
-* Login and navigate to:
+* Login and navigate to: 
 
-      Administration >> Structure >> Webform
+  **Administration >> Structure >> Webform**
 
       About Webform: Webform is the module for making forms and surveys in Drupal. After a submission customizable e-mails can be sent to administrators and/or submitters. Results can be exported into Excel or other spreadsheet applications. Webform also provides some basic statistical review and has an extensive API for expanding its features.
 
@@ -120,56 +120,103 @@ A user can create or duplicate elements. To add new element, click on the "Add E
 
 * Headings
 
-Headings are a very important part of any webpage or form. Thet enable a user to easily understand and navigate the page structure and **must be included** whenver creating new content.
+  Headings are a very important part of any webpage or form. Thet enable a user to easily understand and navigate the page structure and **must be included** whenver creating new content.
 
-```html
-<h1></h1> -- minimun heading requirement
-<h2></h2>
-<h3></h3>
-...
-<h6></h6> -- maximun heading requirement
-```
+  ```html
+  <h1></h1> -- minimun heading requirement
+  <h2></h2>
+  <h3></h3>
+  ...
+  <h6></h6> -- maximun heading requirement
+  ```
 
-Note: The minimun requirement of **```<h1>```** is created by using the **form title**. 
+  Note: The minimun requirement of **H1** is automatically created by using the **form title**. 
 
-To create a heading (use for page navigation adn strucuture), simply create or duplicate 
+  To create a heading (use for page navigation and strucuture), simply create or duplicate an **Advanced HTML/Text** or **processed_text** and be be sure to include a heading class from **H2** through **H6**
 
+  <img src="./images/headings.png" alt="Text and heading settings" width=25%>
 
+  Note: Change the **"Rich Text"** option to **"HTML"** to enter content directly as HTML.
+
+* Other common content types
+
+  Links
+
+  Images
 
 #### Populating Combo Elements: Checkboxes, Radios, and Pull-down
+
 The following elements offers the opportunity to select predescribed values from a list of options.
 
-* Checkbox selections: allows for the selection of one or more values.
+  * Checkbox selections: allows for the selection of one or more values.
 
-* Radio selections: allows for the selection of a single value.
+  * Radio selections: allows for the selection of a single value.
 
-* Pull-down selections: allows for the selection of a single value.
+  * Pull-down selections: allows for the selection of a single value.
 
-##### Understanding "Options", "values", "labels", and ...
-* Option value: an option value for a  selection refers to what value is sent back to the server. This can differ from the text where text might be more descriptive. 
-* Option text: the option text for a single selection refers to what a user can see or choose from. This can be simple like "Yes/No" or more descritive "I have requested but not yet received my new security credatials."
-* Labels & Description: 
+  ##### Understanding "Options", "values", "labels", and ...
+  * Option value: an option value for a  selection refers to what value is sent back to the server. This can differ from the text where text might be more descriptive. 
+
+  * Option text: the option text for a single selection refers to what a user can see or choose from. This can be simple like "Yes/No" or more descritive "I have requested but not yet received my new security credatials."
+  
+  * Labels & Description: 
 
 #### Preconfigured options and lists
-The Options configuration page lists reusable predefined options/values available for select menus, radio buttons, checkboxes and **_Likert_** elements.
+Preconfigured options are reusable presets of options/values available for select menus, radio buttons, checkboxes and other elements and include **_Likert_** elements.
 
 ##### Example 1: Address setup
 
-##### Example 2: Scale
+A good example of using a preconfigured element is when requesting an address in a form. The following is an example of an existing address configuration. 
 
-##### Example 3:  Custom
+* Missing example
+
+##### Example 2: Scales and Likert
+
+    A Likert scale is a rating scale, often found on survey forms, that measures how people feel about something. An effective Likert scale include a series of questions that you ask people to answer, and ideally 5-7 balanced responses people can choose from. It often comes with a neutral midpoint.
+
+A good example of using a preconfigured element is when requesting an opinion in the form of a scale (e.g. on a scale of 1 to 10). The following is an example of an existing scaled configuration.
+
+* Missing example
+
+##### Example 3: Custom
+
+A good example of a custom scale might be a language or gender selector where perhaps a new or alter comfiguration may ber required.
+
+* Missing example
+
+Note: To create a configuration, start with a new or duplicate an existing configuration.
 
 #### Other Elements and Settings
 
+While this guide has cover some of the more comon elements required in form creation, here is a short list of other elements that are common used. Find these either in existing templates or from the <a href="./images/element_list.png">element list</a>.
+
+* Autocomplete (e.g. Country)
+* Date/time?
+* Email? and Email confirm?
+* File? (e.g. PDF)
+
 #### Input Masks, Conditional, and Computed Elements
-List of other useful elements:
 
 
 ### Element Styles
+
+**Casacding Styles Sheets** class and **inline CSS** can be used at anytime. 
+
+#### Understading Control Attributes
+
+
+
 Styles . . . 
 
 ## Testing a Form: Is It Ready?
-Before publishing . . . 
+
+### Accessibility Testing
+
+* WAVE Accessibility Checker
+
+* Microsoft Accessibility Insights 
+
+### Random Data Testing
 
 ## Publishing a Form
 After testing . . . 
@@ -177,14 +224,16 @@ After testing . . .
 ## Form Submissions
 Once published . . .
 
-## Tips and Tricks
+## Tips, Tricks, and Reminders
 
-![my_alt_text](./images/1.png  "1")
 
 ## Element Types
 
-Click here to see a list of all element types: 
-[All Element Types](./images/element_list.png)
+Click here to see a list of all element types:
+
+[All Element Types - List](./element_list.md) 
+
+[All Element Types - With Visual Examples](./images/element_list.png)
 
 ======== Bundle a beginner training pack
 
