@@ -12,10 +12,16 @@ Prerequisites:
 [Intro to Drupal Webforms](https://www.youtube.com/playlist?list=PLL73GOh1BF-mLaw_K0jruwHnAJTGuotDO)
  
  Day 1
+  - Login to demo site and edit basic content page
+  - Edit basic webform through the web interface
 
  Day 2
+  - Copy/modify/create forms using YAML files
+  - Build new bilingual webforms
 
  Day 3
+  - Results Analysis
+  - Accessibility
 
 Bug reporting to wiki
 
