@@ -172,7 +172,9 @@ A good example of using a preconfigured element is when requesting an address in
 
 ##### Example 2: Scales and Likert
 
-    A Likert scale is a rating scale, often found on survey forms, that measures how people feel about something. An effective Likert scale include a series of questions that you ask people to answer, and ideally 5-7 balanced responses people can choose from. It often comes with a neutral midpoint.
+```
+A Likert scale is a rating scale, often found on survey forms, that measures how people feel about something. An effective Likert scale include a series of questions that you ask people to answer, and ideally 5-7 balanced responses people can choose from. It often comes with a neutral midpoint.
+```
 
 A good example of using a preconfigured element is when requesting an opinion in the form of a scale (e.g. on a scale of 1 to 10). The following is an example of an existing scaled configuration.
 
