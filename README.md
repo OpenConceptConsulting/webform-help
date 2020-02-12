@@ -58,16 +58,16 @@ To create a form, click on the "+ Add Webform" botton. This will create a new fo
 > Note: A user could alternatively copy/paste the flex framewrok by selecting the "Source" tab at top of the form and simply copy and paste the code for first three blocks in a new form:
 
 ```yaml
-locked_main_1_client_feedback:
+locked_main_01_client_feedback:
   '#type': container
   '#attributes':
     style: 'box-sizing:border-box; display:flex; color:rgb(51, 51, 51); 
             font-family:Lato, sans-serif; font-size:20px; max-width:900px;'
-  locked_flex_1:
+  locked_flex_01:
     '#type': container
     '#attributes':
       style: 'box-sizing:border-box; float:left; padding:15px;'
-    locked_content_1:
+    locked_content_01:
       '#type': container
       '#attributes':
         style: 'box-sizing:border-box; float:left;'

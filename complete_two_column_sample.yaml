@@ -1,0 +1,203 @@
+locked_main_01_contact:
+  '#type': container
+  '#attributes':
+    style: 'box-sizing:border-box; display:flex; color:rgb(51, 51, 51); font-family:Lato, sans-serif; font-size:20px;'
+  locked_flex_01:
+    '#type': container
+    '#attributes':
+      style: 'box-sizing:border-box; float:left; padding:20px;'
+    locked_content_01:
+      '#type': container
+      '#attributes':
+        style: 'box-sizing:border-box; float:left;'
+      h2_01_step:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': '<h2>Step 1 - Begin your journey</h2>'
+      h3_01_are:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': |
+          <h3>Are you ready to go global?</h3>
+          <a href="https://www.tradecommissioner.gc.ca/quiz.aspx?lang=eng">
+          Take our quiz</a>
+          
+      h2_02_step:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': |
+          <h2>Step 2 - Get help online or contact us</h2>
+          <div>Submit your question online, or:</div>
+          
+      h3_03_contact_office:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': |
+          <h3><a href="http://tradecommissioner.gc.ca/office-bureau/canada.aspx?lang=eng&_ga=2.16662195.401096708.1580831217-1553860701.1580831217">
+          Contact an office in Canada</a></h3>
+            Get advice to sharpen your export plan and begin your international expansion.
+          
+      h3_04_contact_abroad:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': |
+          <h3><a href="http://tradecommissioner.gc.ca/offices-bureaux-internationaux.aspx?lang=eng&_ga=2.247494530.401096708.1580831217-1553860701.1580831217">
+          Contact an office abroad</a></h3>
+           Get advice and industry contacts to help with your market entry.
+          
+      h2_03_step_3:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': '<h2>Step 3 - Access funding and support</h2>'
+      h3_05_fund:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': |
+          <h3>Funding and support programs</h3>
+           Financial support and programs that help growth-oriented firms and under-represented groups.
+                  
+          
+      h3_06_trade:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': |
+          <h3>Trade missions and events</h3>
+           Participate in trade missions and events to make new global connections  
+          
+  locked_flex_02:
+    '#type': container
+    '#attributes':
+      style: 'box-sizing:border-box; float:left; ; padding:20px; width:inherit; max-width:100%;'
+    locked_content_02:
+      '#type': container
+      '#attributes':
+        style: 'box-sizing:border-box; float:left; width:inherit;max-width:100%;'
+      h2_04_question:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': |
+          <h2>Have a question? Ask a trade commissioner!</h2>
+          Fill out this form and a trade commissioner will respond to your request.
+          
+      first_name:
+        '#type': textfield
+        '#title': 'First name'
+        '#description': 'Please provide your first name.'
+        '#required': true
+        '#required_error': 'Error 1: This field is required.'
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      last_name:
+        '#type': textfield
+        '#title': 'Last name'
+        '#description': 'Please provide your last name.'
+        '#required': true
+        '#required_error': 'Error 2: This field is required.'
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      company_name:
+        '#type': textfield
+        '#title': 'Company name (optional)'
+        '#description': 'Please provide your company name (optional).'
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      email:
+        '#type': textfield
+        '#title': 'Email address'
+        '#description': 'Please provide your email address.'
+        '#required': true
+        '#required_error': 'Error 4 This field is required.'
+        '#input_mask': '''alias'': ''email'''
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      postal_code:
+        '#type': textfield
+        '#title': 'Postal Code'
+        '#input_mask': 'a9a 9a9'
+        '#description': 'Please provide your postal code.'
+        '#required': true
+        '#required_error': 'Error 3: This field is required.'
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      description:
+        '#type': select
+        '#title': 'You are a:'
+        '#description': 'Please provide your password.'
+        '#options':
+          'VALUE 1': 'VALUE 1 TEXT'
+          'VALUE 2': 'VALUE 2 TEXT'
+        '#required': true
+        '#required_error': 'Error 5 This field is required.'
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      subject:
+        '#type': select
+        '#title': 'Specific subject of your enquiry:'
+        '#description': 'Please confirm your password.'
+        '#placeholder': 'Please confirm your password.'
+        '#required': true
+        '#required_error': 'Error 5 This field is required.'
+        '#options':
+          'VALUE 1': 'VALUE 1 TEXT'
+          'VALUE 2': 'VALUE 2 TEXT'
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      processed_text_h3_3:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': |
+          <h3>Language of Correspondence</h3>
+          
+      email_lang:
+        '#type': radios
+        '#title': 'Please select your prefered language of communication.'
+        '#description': 'Please select your English or French as your prefered language of communication.'
+        '#options': translations
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      q_and_c:
+        '#type': textarea
+        '#title': 'Questions/Comments:'
+        '#description': 'Please provide questions/comments here.'
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      privacy:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': '<a role="button" aria-controls="centred-popup-id" class="wb-lbx wb-init wb-lbx-inited" href="#centred-popup-id" id="wb-auto-4">Privacy statement</a>'
