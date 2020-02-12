@@ -21,9 +21,9 @@ Bug reporting to wiki
 
 
 ## Drupal and WebForms
-[Drupal](https://www.google.com)
+[Drupal](https://www.drupal.org/)
 
-[WebForms](https://www.google.com)
+[WebForms](https://www.drupal.org/project/webform)
 
 * Install **Drupal** (optional)
 
@@ -47,9 +47,9 @@ To create a form, click on the "+ Add Webform" botton. This will create a new fo
 
 * "FLEX" Framework (locked) - the following illustrates the "flex" framework. This framework shoudl remain untouched, or "locked". All content shoudl be contained or nested within these blocks. This can ensure consistent and practical behavior across differing browsers and devices.
 
-![my_alt_text](./images/4.png  "Image title here!")
+![FLEX framework UI](./images/4.png  "FLEX framework UI")
 
-NOTE: A user could alternatively copy/paste the flex framewrok by selecting the "Source" tab at top of the form and simply copy and paste the code for first three blocks in a new form:
+> Note: A user could alternatively copy/paste the flex framewrok by selecting the "Source" tab at top of the form and simply copy and paste the code for first three blocks in a new form:
 
 ```yaml
 locked_main_1_client_feedback:
@@ -80,7 +80,7 @@ A user can create or duplicate elements. To add new element, click on the "Add E
 
   <img src="./images/textbox.png" alt="Textobox and processed text setting" width=25%>
 
-  Note: Please see **Element Styles** to learn more about styling text.
+  > Note: Please see **Element Styles** to learn more about styling text.
 
   It is also possible to use the form "Source" tab to copy and paste the textbox code. Take note of **"Advanced HTML/Text"** in the form editor element list or **processed_text** in the example below.
 
@@ -101,7 +101,7 @@ A user can create or duplicate elements. To add new element, click on the "Add E
 
     Textareas are much like text fields, only they allow multiline input. 
 
-    As mentioned ealier, it is also possible to use the form "Source" tab to copy and paste the text field and textarea code. Take note of type **textfield** or **textarea**, and that the field key (e.g. the first line reading **"sample_text_field:"**) needs to have a unique name, like **"sample_text_field_01:"**.
+    As mentioned ealier, it is also possible to use the form "Source" tab to copy and paste the text field and textarea code. Take note of type **textfield** or **textarea**, and that the field key (e.g. the first line reading **"sample_text_field:"**) needs to have a unique name, like **"sample_text_field_01:"** or **"question_01"**.
 
   ```yaml
   sample_text_field:
@@ -113,7 +113,7 @@ A user can create or duplicate elements. To add new element, click on the "Add E
       '#required_error': 'Valid data is required for the question. Please provide valid data.'
   ```
 
-    NOTE: Please see **Input Masks, Conditional, and Computed Elements** to learn more about input masks (e.g. date, email, phone number, etc.)
+    > Note: Please see **Input Masks, Conditional, and Computed Elements** to learn more about input masks (e.g. date, email, phone number, etc.)
 
 * Headings
 
@@ -127,31 +127,38 @@ A user can create or duplicate elements. To add new element, click on the "Add E
   <h6></h6> -- maximun heading requirement
   ```
 
-  Note: The minimun requirement of **H1** is automatically created by using the **form title**. 
+  > Note: The minimun requirement of **H1** is automatically created by using the **form title**. 
 
   To create a heading (use for page navigation and strucuture), simply create or duplicate an **Advanced HTML/Text** or **processed_text** and be be sure to include a heading class from **H2** through **H6**
 
   <img src="./images/headings.png" alt="Text and heading settings" width=25%>
 
-  Note: Change the **"Rich Text"** option to **"HTML"** to enter content directly as HTML.
+  > Note: Change the **"Rich Text"** option to **"HTML"** to enter content directly as HTML.
 
 * Other common content types
 
-  Links
+  Links: Links (internal or exteral) can be added using the Rich Text editor or standard HTML.
 
-  Images
+  Images: Images (internal or exteral) can be added using the Rich Text editor or standard HTML.
 
+  <img src="./images/rte-link.png" alt="Text and heading settings" width=25%> 
+
+  ```html
+  <a href="http://www.example.com" title="Click here to visit www.example.com">Visit Example</a>
+
+  <img src="./example_image.png" alt="An example image">
+  ```
 #### Populating Combo Elements: Checkboxes, Radios, and Pull-down
 The following elements offers the opportunity to select predescribed values from a list of options.
 
-  * Checkbox selections: allows for the selection of one or more values.
+  * Checkbox selections: allows for the selection of one or more values. Checkboxes can be populated one option at a time or using preconfigured options.
 
-  * Radio selections: allows for the selection of a single value.
+  * Radio selections: allows for the selection of a single value. Radios can be populated one option at a time or using preconfigured options.
 
-  * Pull-down selections: allows for the selection of a single value.
+  * Pull-down selections: allows for the selection of a single value. Pulldowns can be populated one option at a time or using preconfigured options.
 
   ##### Understanding "Options", "values", "labels", and ...
-  * Option value: an option value for a  selection refers to what value is sent back to the server. This can differ from the text where text might be more descriptive. 
+  * Option value: an option value for a  selection refers to what value is sent back to the server. This can differ from the text where text might be more descriptive.
 
   * Option text: the option text for a single selection refers to what a user can see or choose from. This can be simple like "Yes/No" or more descritive "I have requested but not yet received my new security credatials."
   
@@ -167,7 +174,6 @@ A good example of using a preconfigured element is when requesting an address in
 
 ##### Example 2: Scales and Likert
 > A Likert scale is a rating scale, often found on survey forms, that measures how people feel about something. An effective Likert scale include a series of questions that you ask people to answer, and ideally 5-7 balanced responses people can choose from. It often comes with a neutral midpoint.
-
 
 A good example of using a preconfigured element is when requesting an opinion in the form of a scale (e.g. on a scale of 1 to 10). The following is an example of an existing scaled configuration.
 
