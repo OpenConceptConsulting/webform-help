@@ -1,0 +1,57 @@
+form_page_01:
+  '#type': wizard_page
+  '#title': 'Form Page 01'
+  '#next_button_label': 'Go to page 2 of 3'
+  locked_main_01:
+    '#type': container
+    '#attributes':
+      style: 'box-sizing:border-box; display:flex; color:rgb(51, 51, 51); font-family:Lato, sans-serif; font-size:20px;'
+    locked_flex_01:
+      '#type': container
+      '#attributes':
+        style: 'box-sizing:border-box; float:left; padding:20px;'
+      locked_content_01:
+        '#type': container
+        '#attributes':
+          style: 'box-sizing:border-box; float:left;'
+        q1:
+          '#type': textfield
+          '#title': 'QUESTION 1'
+form_page_02:
+  '#type': wizard_page
+  '#title': 'Form Page 01'
+  '#next_button_label': 'Go to page 2 of 3'
+  locked_main_02:
+    '#type': container
+    '#attributes':
+      style: 'box-sizing:border-box; display:flex; color:rgb(51, 51, 51); font-family:Lato, sans-serif; font-size:20px;'
+    locked_flex_02:
+      '#type': container
+      '#attributes':
+        style: 'box-sizing:border-box; float:left; padding:20px;'
+      locked_content_02:
+        '#type': container
+        '#attributes':
+          style: 'box-sizing:border-box; float:left;'
+        q2:
+          '#type': textfield
+          '#title': 'QUESTION 2'
+form_page_03:
+  '#type': wizard_page
+  '#title': 'Form Page 01'
+  '#next_button_label': 'Go to page 2 of 3'
+  locked_main_03_contact:
+    '#type': container
+    '#attributes':
+      style: 'box-sizing:border-box; display:flex; color:rgb(51, 51, 51); font-family:Lato, sans-serif; font-size:20px;'
+    locked_flex_03:
+      '#type': container
+      '#attributes':
+        style: 'box-sizing:border-box; float:left; padding:20px;'
+      locked_content_03:
+        '#type': container
+        '#attributes':
+          style: 'box-sizing:border-box; float:left;'
+        q3:
+          '#type': textfield
+          '#title': 'QUESTION 3'

@@ -14,6 +14,13 @@ locked_main_01_title:
         '#type': processed_text
         '#format': rich_text
         '#text': '<h2>Step 1 - add your first H2 heading.</h2>'
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+
       text_01:
         '#type': processed_text
         '#text': 'Step 2 - add your first text content.'
