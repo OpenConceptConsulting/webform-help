@@ -1,0 +1,284 @@
+locked_main_01:
+  '#type': container
+  '#attributes':
+    style: 'box-sizing:border-box; display:flex; color:rgb(51, 51, 51); font-family:Lato, sans-serif; font-size:20px;'
+  locked_flex_01:
+    '#type': container
+    '#attributes':
+      style: 'box-sizing:border-box; float:left; padding:20px;'
+    locked_content_01:
+      '#type': container
+      '#attributes':
+        style: 'box-sizing:border-box; float:left;'
+      heading_level_02:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': |
+          <h2>HEADING LEVEL 2</h2>
+          
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      processed_text_h2_01:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': |
+          <!-- TEXT content here! -->
+            <div style="box-sizing:border-box; float:left; line-height:1.75;">
+            This is the first column of a two column page. In this example, styles are set inline using DIVs 
+            tags. For example: 
+            <div style="font-size:30; color:red; text-align:center; padding:25px;">
+              FONT SIZE 30; RED, PADDING 25px</div>
+            <div style="font-size:20; background-color:#333; color:#fff; text-align:center; padding:50px;">
+              <p>FONT SIZE 20</p>
+              <p>BACKGROUND GREY</p>
+              <p><strong>PADDING 50px</strong></p>
+            </div>
+            <div style="box-sizing:border-box; float:left; text-align:center; padding:25px; width:50%;">LEFT SIDE</div>
+            <div style="box-sizing:border-box; float:left; text-align:center; padding:25px; width:50%;">FLOAT: RIGHT SIDE</div>
+          
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      processed_text_h3_02:
+        '#type': processed_text
+        '#format': rich_text
+        '#text': |
+          <div style="box-sizing:border-box; display:flow-root; width:100%;">
+          <p><h3 style="background:linear-gradient(90deg, rgba(28,48,74,1) 0%, rgba(50,50,50,1) 35%, rgba(0, 0, 0,1) 100%); color:#ffffff; display:inline-block; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:18px;line-height: 1.75; margin-bottom:15px; padding:20px; vertical-align:middle; width:100%;">
+          <!-- HEADER 3 content here! -->
+          <strong>HEADING LEVEL 3: Information on form accessibility - heading on a stylized gradient background.</strong></h3></p>
+          
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      text_field:
+        '#type': textfield
+        '#title': 'Example text field - styled using "attributes" - question goes here - do you need a text field?'
+        '#description': 'Example description for a text field. It is important to include this when creating form fields.'
+        '#help_title': 'Example help title (optional).'
+        '#help': 'Example help text (optional).'
+        '#placeholder': 'Placeholder text (optional).'
+        '#required': true
+        '#required_error': 'Error message - this field is required (optional).'
+        '#wrapper_attributes':
+          style: 'width:inherit;color:red;'
+        '#attributes':
+          style: 'width:inherit;color:green;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;color:blue;'
+      textarea:
+        '#type': textarea
+        '#title': 'Example text area'
+        '#description': 'Example description for a text area. It is important to include this when creating form fields.'
+        '#placeholder': 'Placeholder text (optional).'
+        '#required': true
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      phone_number:
+        '#type': textfield
+        '#title': 'Text Field with Phone Number Mask'
+        '#description': 'Description of Text Field with Phone Number Mask. A mask will ensure the submitter provides valid data.'
+        '#help_title': 'Help title'
+        '#help': 'Help text.'
+        '#input_mask': '(999) 999-9999'
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      postal_code:
+        '#type': textfield
+        '#title': 'Postal Code'
+        '#description': 'Please enter a valid postal code.'
+        '#input_mask': 'a9a 9a9'
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      email:
+        '#type': textfield
+        '#title': Email
+        '#description': 'Please enter a valid email.'
+        '#input_mask': '''alias'': ''email'''
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      date:
+        '#type': date
+        '#title': 'Please provide a date:'
+        '#description': 'Please enter date.'
+        '#date_date_format': ''
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      checkboxes:
+        '#type': checkboxes
+        '#title': 'Sample Question: check all that apply - I have:'
+        '#description': 'Animal checklist.'
+        '#options':
+          CAT: '...at least one cat. -- Check this box if you have one or more cats.'
+          DOG: '...at least one cat. -- Check this box if you have one or more dogs.'
+          OTHER: '...at least one other animal. -- Check this box if you have one or more other animals.'
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      radios:
+        '#type': radios
+        '#title': 'Example radio question. This uses a preconfigured option called "translations". Use existing cinfigurations or create your own.'
+        '#description': 'Example description for radios'
+        '#options': translations
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      autocomplete_country:
+        '#type': autocomplete
+        '#title': 'This type of element allows a submitter choose from an "auto completing" list. Start typing (minimum 3 letters) to see a list of possible results.'
+        '#description': 'Description for auto-completeing Country selection.'
+        '#help_title': 'Select a Country'
+        '#help': 'Start typing to see a list of possible countries. This list was populated using a pre-configured options list called <b>country_names</b>.'
+        '#autocomplete_items': country_names
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+  locked_flex_02:
+    '#type': container
+    '#attributes':
+      style: 'box-sizing:border-box; float:left; padding:20px;'
+    locked_content_02:
+      '#type': container
+      '#attributes':
+        style: 'box-sizing:border-box; float:left;'
+      rating:
+        '#type': rating
+        '#title': 'Rating from 1 to 5 - how much did you enjoy learning about ratings?'
+        '#description': 'Rate this from 1 (dislike) to 5 (like)'
+        '#title_display': before
+        '#description_display': before
+        '#max': '5'
+        '#star_size': large
+        '#wrapper_attributes':
+          style: 'width:inherit;padding-bottom:20px;padding-top:20px;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      radio_rating:
+        '#type': radios
+        '#title': 'Radio Rating'
+        '#description': 'Please rate it!'
+        '#options': likert_comparison_2
+        '#options_display': side_by_side
+        '#wrapper_attributes':
+          style: 'width:inherit;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      captcha:
+        '#type': captcha
+        '#captcha_title': 'Question title'
+        '#description': 'Please enter valid CAPTCHA string.'
+        '#captcha_description': 'Question description'
+        '#wrapper_attributes':
+          style: 'width:inherit;padding-bottom:20px;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      industry:
+        '#type': select
+        '#title': 'Industry pulldown example. Populated using pre-configured option "industry".'
+        '#description': 'Please select an industry.'
+        '#options': industry
+        '#wrapper_attributes':
+          style: 'width:inherit;padding-bottom:20px;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      radios_yes_no:
+        '#type': radios
+        '#title': 'Radios Yes/No'
+        '#description': 'Please answer yes or no - thank you - <br> Please let us know if you are not sure <a href=""mailto:user@example.com"">user@example.com</a>'
+        '#help_title': 'Not sure?'
+        '#help': 'Please let us know if you are not sure.'
+        '#description_display': before
+        '#help_display': title_after
+        '#options': yes_no
+        '#options_display': side_by_side
+        '#wrapper_attributes':
+          style: 'width:inherit;padding-bottom:20px;max-width:400px;'
+        '#attributes':
+          style: 'width:inherit;max-width:400px;'
+        '#label_attributes':
+          style: 'width:inherit;max-width:400px;'
+        '#help_text': 'Please answer yes or no.'
+      radio_custom:
+        '#type': radios
+        '#title': 'If you want to quickly add a radio choice, use this example. Did this help?'
+        '#description': 'Please answer yes or no.'
+        '#options':
+          1: 'Yes, this really did help -- Thank you!'
+          2: 'No, I don''t get it -- Help please!'
+        '#wrapper_attributes':
+          style: 'width:inherit;padding-bottom:20px;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      pulldown_select:
+        '#type': select
+        '#title': 'If you want to quickly add a pulldown choice, use this example. Did this help?'
+        '#description': 'Please answer yes or no.'
+        '#options':
+          'YES': 'Yes, this really did help -- Thank you!'
+          'NO': 'No, I don''t get it -- Help please!'
+        '#wrapper_attributes':
+          style: 'width:inherit;padding-bottom:20px;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
+      terms_of_service:
+        '#type': terms_of_service
+        '#terms_title': 'Terms of service with link example.'
+        '#description': 'Description of Terms of Service - please read using link above.'
+        '#terms_content': 'Terms content'
+        '#wrapper_attributes':
+          style: 'width:inherit;padding-bottom:20px;'
+        '#attributes':
+          style: 'width:inherit;max-width:100%;'
+        '#label_attributes':
+          style: 'width:inherit;'
